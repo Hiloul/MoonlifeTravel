@@ -1,10 +1,8 @@
-const burger = document.querySelector('.burger');
-const nav = document.querySelector('.nav-links');
+document.addEventListener('DOMContentLoaded', function () {
+    const burger = document.getElementById('burger');
+    const navLinks = document.querySelector('.nav-links');
 
-burger.addEventListener('click', () => {
-    // Toggle Nav
-    nav.classList.toggle('nav-active');
-
-    // Burger Animation
-    burger.classList.toggle('toggle');
+    burger.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+    });
 });

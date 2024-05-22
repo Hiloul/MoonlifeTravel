@@ -1,0 +1,135 @@
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    .content {
+        padding: 15px;
+        margin-top: 60px;
+    }
+
+    .section {
+        margin-top: 60px;
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+    }
+
+    button {
+        padding: 0.75rem 1.25rem;
+        font-size: 90%;
+    }
+
+    .btn-link {
+        padding: 0.75rem 1.25rem;
+        font-size: 90%;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    .content {
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    .section {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 85%;
+    }
+
+    .btn-link {
+        padding: 0.5rem 1rem;
+        font-size: 85%;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+    .destination h2 {
+        font-size: 24px;
+    }
+
+    .link-overlay {
+        font-size: 14px;
+    }
+
+    #destination-table th,
+    #destination-table td {
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 5px 0;
+    }
+
+    .content {
+        padding: 5px;
+        margin-top: 40px;
+    }
+
+    .section {
+        margin-top: 40px;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+    }
+
+    button {
+        padding: 0.25rem 0.5rem;
+        font-size: 80%;
+    }
+
+    .btn-link {
+        padding: 0.25rem 0.5rem;
+        font-size: 80%;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    .destination h2 {
+        font-size: 20px;
+    }
+
+    .link-overlay {
+        font-size: 12px;
+    }
+
+    #destination-table th,
+    #destination-table td {
+        padding: 4px;
+    }
+}
+
