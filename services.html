@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlife Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./assets/logo2.png" alt="Moonlife Travel" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<div class="content">
+    <div class="section">
+        <img src="./assets/logo2.png" alt="Présentation" class="presentation-image">
+    </div>
+	 <div class="section">
+            <h2>Destinations</h2>
+            <p>N'oubliez pas de découvrir nos destinations phares, cliquez sur le lien suivant pour être redirigé(e) vers la page.</p>
+            <a href="destinations.html" class="btn-link">Aller</a>
+
+            <h3>Destinations suggérées en ce moment :</h3>
+            <table id="destination-table">
+                <caption>Date : <span id="date"></span></caption>
+                <tr>
+                    <th>Destinations</th>
+                    <th>Raisons</th>
+                    <th>Climat de saison</th>
+                    <th>Affluence touristique</th>
+                </tr>
+                <tr>
+                    <td>Paris, France</td>
+                    <td>La ville des lumières vous attend avec ses musées, ses monuments et sa cuisine raffinée.</td>
+                    <td>Moyen, températures douces avec quelques averses possibles.</td>
+                    <td>Modérée, saison touristique moyenne avec moins de foule que pendant les mois d'été.</td>
+                </tr>
+                <tr>
+                    <td>Bali, Indonésie</td>
+                    <td>Plages paradisiaques, culture riche et aventures en plein air vous attendent sur cette île magnifique.</td>
+                    <td>Chaude et humide, saison des pluies avec des températures élevées.</td>
+                    <td>Élevée, malgré la saison des pluies, Bali reste une destination très prisée toute l'année.</td>
+                </tr>
+                <!-- Ajoutez d'autres lignes selon vos suggestions de destinations -->
+            </table>
+        </div>
+<div class="section">
+    <h2>Vols et croisières</h2>
+    <p>Retrouvez ici la rubrique des vols et des croisières.</p>
+	 <p>Notre équipe ne passe que par des compagnie agrées et connues. Si vous nous faites confiance, nous vous garantissons de faire tout ce qui est en notre pouvoir pour vous éviter les mauvaises suprises. 
+	 </p>
+	<p>Sur MoonLife Travel, vous trouverez les services suivants:
+	</p>
+   <ul class="custom-list">
+    <li><img src="./assets/conseil.png" alt="Conseils personnalisés"> Conseils personnalisés</li>
+
+    <li><img src="./assets/planification.png" alt="Organisation d'itinéraire de A à Z"> Organisation d'itinéraire de A à Z </li>
+
+    <li><img src="./assets/vacances.png" alt="Planification de vacances"> Planification de vacances
+    </li>
+
+    <li><img src="./assets/valise.png" alt="Planification de trajet professionnel"> Planification de trajet professionnel </li>
+
+    <li><img src="./assets/confiance.png" alt="Confiance et disponibilité pour notre clientèle"> Confiance et disponibilité pour notre clientèle </li>
+</ul>
+
+<p>N'attendez plus contactez nous pour en savoir plus ou pour un devis. En cliquant que le lien ci-dessous vous serez redirigé(e) vers le formulaire de contact.</p>
+<a href="contact.html" class="btn-link">Contactez-nous</a>
+    </div>
+<a href="index.html" class="btn-link">Accueil</a>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Moonlife Travel - Tous droits réservés</p>
+<a><i class="fa-brands fa-snapchat"></i></a>
+<a><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</footer>
+
+<script src="./js/script.js"></script>
+<script>
+        // Récupérer l'élément span avec l'id "date"
+        var dateElement = document.getElementById("date");
+        // Créer un objet de date pour la date actuelle
+        var currentDate = new Date();
+        // Obtenir la date sous forme de chaîne de caractères au format français
+        var dateString = currentDate.toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+        // Mettre à jour le contenu de l'élément span avec la date
+        dateElement.textContent = dateString;
+</script>
+</body>
+</html>
