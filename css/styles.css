@@ -353,3 +353,34 @@ form {
         text-align: center;
     }
 }
+
+/* test scroll */
+
+.scroll-to-top {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #d8c5b4;
+    color: #f9f3f6;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+    display: flex;
+}
+
+.fa-solid fa-arrow-up{
+    display: flex;
+}
+.scroll-to-top:hover {
+    background-color: #555;
+}
+
+.scroll-to-top i {
+    font-size: 24px;
+}
